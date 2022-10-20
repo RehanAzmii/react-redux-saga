@@ -15,8 +15,10 @@ export const cartData = (data = [], action) => {
     case REMOVE_TO_CART:
       console.log("REMOVE_TO_CART", action);
       // data.pop();
-      data.length = data.length ? data.length - 1 : [];
-      return [...data];
+      // data.length = data.length ? data.length - 1 : [];
+      const remainingItem = data.filter((item) => item.id !== action.data);
+      console.log("reamin item", remainingItem);
+      return [...remainingItem];
     case EMPTY_CART:
       console.log("empty-cart condition", action);
       data = [];
