@@ -35,7 +35,17 @@
   font-size: 22px;
 }
 /* cart end style */
-
+.search-box {
+  float: left;
+  padding: 25px;
+  width: 50%;
+}
+.search-box input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #777;
+  padding-left: 10px;
+}
 /* product-ui */
 .product-container {
   display: flex;
